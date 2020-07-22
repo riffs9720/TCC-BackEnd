@@ -16,7 +16,8 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.resource('medico', 'MedicoController')
-Route.resource('paciente', 'PacienteController')
+Route.post("/Login", "LoginController.autenticacao")
+
+Route.resource('usuario', 'UsuarioController')
 Route.resource('consulta', 'ConsultaController')
 Route.resource('prontuario', 'ProntuarioController')
